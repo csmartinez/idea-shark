@@ -1,1 +1,22 @@
-<router-outlet></router-outlet>
+<header class="app-header">
+  <div fxLayout="row" fxLayoutAlign="space-between center">
+    <div fxLayout="column" fxLayoutAlign="space-between start">
+        <span class="title">Idea Shark</span>
+        <a routerLink="/">
+          <img src="../assets/images/shark.png" alt="shark logo" class="shark-logo">
+        </a>
+
+        <span class="nav-menu" fxLayout="row" fxLayoutAlign="space-evenly center">
+          <a class="nav-link hover-underline-animation" href="#" routerLink="/" fxLayoutAlign="center">Home</a>
+          <a class="nav-link hover-underline-animation" href="#" routerLink="/" fxLayoutAlign="center"><i class="bi bi-gift"></i>&nbsp;  Our 2023 Favorites</a>         
+          <a class="nav-link hover-underline-animation" href="#" routerLink="/" fxLayoutAlign="center">About</a>
+          <a class="nav-link hover-underline-animation" href="#" routerLink="/" fxLayoutAlign="center">Feedback</a>         
+          <a class="nav-link hover-underline-animation" style="float: right; margin-top: 40px; margin-right: 10px;" href="#" routerLink="/" fxLayoutAlign="center">Sign In</a>         
+        </span>
+    </div>
+  </div>
+</header>
+
+<div class="content-pages">
+  <router-outlet></router-outlet>
+</div>
